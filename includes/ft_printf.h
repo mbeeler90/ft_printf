@@ -6,7 +6,7 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/07 17:22:43 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/03/14 17:38:34 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 # include "../libft/libft.h"
 # include <stdarg.h>
-# include <stdio.h>//
 
 typedef struct s_print
 {
