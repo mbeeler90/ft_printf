@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/06 13:47:32 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:27:45 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** print numbers and in the right formating
+*/
 void	ft_di_conversion(const char **format, t_print *args)
 {
 	t_u64	n;

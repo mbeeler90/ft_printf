@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/04 14:45:26 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:44:42 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** print the width of the float
+*/
 void	ft_print_width(const char *result, t_print *args)
 {
 	int	len;

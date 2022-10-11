@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/06 13:48:49 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 16:24:47 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** Function to convert a number to binary code.
+*/
 void	ft_b_conversion(const char **format, t_print *args)
 {
 	char	*result;

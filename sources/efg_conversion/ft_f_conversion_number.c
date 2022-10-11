@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/04 18:05:19 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:42:34 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** Convert the number part of the float
+*/
 char	*ft_f_conversion_number(t_u64 number_dec, t_u64 add_zero_num)
 {
 	char	*number;

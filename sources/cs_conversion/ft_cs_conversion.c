@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/08 10:37:17 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:24:59 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** print the char in the right formating
+*/
 static void	ft_c_conversion(const char **format, t_print *args, char c)
 {
 	if (args->width > 1 && args->dash == 0 && (args->zero == 0 || \
@@ -34,6 +37,9 @@ static void	ft_c_conversion(const char **format, t_print *args, char c)
 	}
 }
 
+/*
+** print the string in the right formating
+*/
 static void	ft_s_conversion(t_print *args, char *s)
 {
 	int		len;
@@ -60,6 +66,9 @@ static void	ft_s_conversion(t_print *args, char *s)
 	}
 }
 
+/*
+** call functions for string and char conversions.
+*/
 void	ft_cs_conversion(const char **format, t_print *args)
 {
 	if (**format == 'c')

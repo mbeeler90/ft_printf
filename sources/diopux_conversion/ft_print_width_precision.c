@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/08 10:46:41 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:34:32 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** print the 0 formating
+*/
 static void	ft_print_zero(const char **format, t_print *args)
 {
 	while (args->dot == 1 && args->precision-- > args->digits + args->hash)
@@ -24,6 +27,9 @@ static void	ft_print_zero(const char **format, t_print *args)
 	}
 }
 
+/*
+** print - if the number is negative
+*/
 static void	ft_print_sign(const char **format, t_print *args)
 {
 	if (args->neg == 1)
@@ -40,6 +46,9 @@ static void	ft_print_sign(const char **format, t_print *args)
 		args->arg_len += write(1, "0X", 2);
 }
 
+/*
+** print the width and the precision
+*/
 void	ft_print_width_precision(const char **format, t_print *args, t_u64 n)
 {
 	while (args->width > args->precision + args->sign

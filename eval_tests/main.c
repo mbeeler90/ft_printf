@@ -6,7 +6,7 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/14 17:29:21 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 16:17:51 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -463,5 +463,3 @@ int	main(int argc, char **argv)
 	system("leaks a.out");
 	return (0);
 }
-
-//compile: gcc -Wall -Wextra -Werror main.c -I ../includes  -L../ -lftprintf

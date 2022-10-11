@@ -6,12 +6,16 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/06 14:12:43 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:29:20 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** function to determine how many significant bytes have to be printed based
+** on the selected format
+*/
 int	ft_get_sig_bytes(const char **format, t_print *args, t_u64 n, int div)
 {
 	int	digits;

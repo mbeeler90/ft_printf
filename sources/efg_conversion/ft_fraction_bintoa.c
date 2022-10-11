@@ -6,7 +6,7 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/04 21:59:08 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:44:01 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,9 @@ static void	ft_add_first_number(char **fraction_bin, const char *fraction_div, \
 	}
 }
 
+/*
+** Convert the fraction of the float to a string
+*/
 char	*ft_fraction_bintoa(const char *binary, const char *fraction_div, \
 		t_print *args)
 {

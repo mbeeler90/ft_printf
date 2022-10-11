@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/07 09:07:11 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 16:23:44 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** Check the modifiers for the current conversion.
+*/
 static void	ft_check_modifier(const char **format, t_print *args)
 {
 	if (**format == 'l')
@@ -36,6 +39,9 @@ static void	ft_check_modifier(const char **format, t_print *args)
 	}
 }
 
+/*
+** Check the width and precision of the current conversion
+*/
 static void	ft_check_width_precision(const char **format, t_print *args)
 {
 	int	nbr;
@@ -62,6 +68,9 @@ static void	ft_check_width_precision(const char **format, t_print *args)
 	args->precision2 = nbr;
 }
 
+/*
+** Check which flags are active for the current conversion.
+*/
 static int	ft_check_flags(const char **format, t_print *args)
 {
 	if (**format != '#' && **format != '0' && **format != '-'
@@ -80,6 +89,9 @@ static int	ft_check_flags(const char **format, t_print *args)
 	return (1);
 }
 
+/*
+** Function to call the correct conversions.
+*/
 int	ft_type_conversion(const char **format, t_print *args)
 {
 	*format += 1;

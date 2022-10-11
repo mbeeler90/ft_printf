@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/06 12:23:20 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:28:04 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** call functions for the right conversion
+*/
 void	ft_diopux_conversion(const char **format, t_print *args)
 {
 	if (**format == 'd' || **format == 'i')

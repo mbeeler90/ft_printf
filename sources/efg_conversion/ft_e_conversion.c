@@ -6,7 +6,7 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/08 10:17:04 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:40:03 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,9 @@ static void	ft_change_format_to_e(char **result, t_print *args)
 	ft_finalize_e(result, e);
 }
 
+/*
+** print number in e format
+*/
 void	ft_e_conversion(t_print *args)
 {
 	t_f128	n;

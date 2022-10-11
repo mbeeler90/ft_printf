@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/04 16:18:21 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 16:21:24 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** Set the simple color.
+*/
 static int	ft_color(const char **format)
 {
 	int	len;
@@ -38,6 +41,9 @@ static int	ft_color(const char **format)
 	return (len);
 }
 
+/*
+** Set the bold color
+*/
 static int	ft_bold(const char **format)
 {
 	int	len;
@@ -64,6 +70,9 @@ static int	ft_bold(const char **format)
 	return (len);
 }
 
+/*
+** Set the underline color
+*/
 static int	ft_underline(const char **format)
 {
 	int	len;
@@ -90,6 +99,9 @@ static int	ft_underline(const char **format)
 	return (len);
 }
 
+/*
+** Set background color
+*/
 static int	ft_background(const char **format)
 {
 	int	len;
@@ -116,6 +128,9 @@ static int	ft_background(const char **format)
 	return (len);
 }
 
+/*
+** Function to set the color and type of the text.
+*/
 int	ft_set_color(const char **format)
 {
 	if (!ft_strncmp(*format, "{EOC}", 5))

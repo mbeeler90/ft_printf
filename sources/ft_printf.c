@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/08 11:55:11 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 16:15:55 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
+/*
+** Write the current character if it not a conversion, convert if it is.
+*/
 static int	ft_iterate_format(const char **format, t_print *args)
 {
 	int	conversion;
@@ -35,6 +38,10 @@ static int	ft_iterate_format(const char **format, t_print *args)
 	return (len);
 }
 
+/*
+** Iterate through the string that is given as input and printing the characters
+** and conversions.
+*/
 int	ft_printf(const char *format, ...)
 {
 	t_print	*args;

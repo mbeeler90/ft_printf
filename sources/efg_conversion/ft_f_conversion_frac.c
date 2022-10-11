@@ -6,12 +6,15 @@
 /*   By: manuelbeeler <manuelbeeler@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:43:19 by mbeeler           #+#    #+#             */
-/*   Updated: 2022/03/04 21:51:21 by manuelbeele      ###   ########.fr       */
+/*   Updated: 2022/10/11 17:42:13 by manuelbeele      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
+/*
+** Convert the fraction part of the float
+*/
 char	*ft_f_conversion_frac(t_u64 frac_dec, t_s16 offset, t_print *args, \
 		char *number)
 {
